@@ -1,22 +1,25 @@
-import React from 'react'
+import React from 'react';
+import {Box, Container, Flex } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
-    <nav className="fixed z-50 flex items-center justify-center w-full px-6 top-2 ">
+    <Container
+    maxW="2xl"
+    w="1200px"
+    h="50px"
+    color="#f0f3f6"
+    pos="fixed"
+    top={0}
+    bg="#484444"
+  >
+    <Flex>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#project"> Projects</a>
+      <a href="#contactme"> Contact Me</a>
+    </Flex>
+    </Container>
 
-        <div className='flex items-center w-full p-4 md:w-880 bg-navBar rounded-2xl h-80'>
-          <span className='text-lg font-medium text-slate-200'> Caroline Ho</span>
-
-          <div className='items-center flex-1 hidden gap-6 ml-6'>
-
-            <a href="#home" className='text-base font-medium duration-100 ease-in-out cursor-pointer text-textBase hover:text-slate-100'>Home</a>
-            <a href="#about" className='text-base font-medium duration-100 ease-in-out cursor-pointer text-textBase hover:text-slate-100'>About</a>
-            <a href="#project" className='text-base font-medium duration-100 ease-in-out cursor-pointer text-textBase hover:text-slate-100'>Project</a>
-            <a href="#contactme" className='text-base font-medium duration-100 ease-in-out cursor-pointer text-textBase hover:text-slate-100'>Contact me</a>
-
-          </div>
-        </div>
-        </nav>
   )
 }
 
