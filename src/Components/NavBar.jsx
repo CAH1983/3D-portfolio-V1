@@ -1,26 +1,26 @@
-import React from 'react';
-import {Box, Container, Flex } from "@chakra-ui/react";
+// @ts-nocheck
+import React from "react";
+import { Box, Flex } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
-    <Container
-    maxW="2xl"
-    w="1200px"
-    h="50px"
-    color="#f0f3f6"
-    pos="fixed"
-    top={0}
-    bg="#484444"
-  >
-    <Flex>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#project"> Projects</a>
-      <a href="#contactme"> Contact Me</a>
-    </Flex>
-    </Container>
-
-  )
-}
+    <Box
+      h="50px"
+      color="#d9317a"
+      pos="fixed"
+      top={0}
+      bgColor="rgba(255,255,255,0.1);"
+      px={1}
+      py={2}
+    >
+      <Flex px={2}>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project"> Projects</a>
+        <a href="#contactme"> Contact Me</a>
+      </Flex>
+    </Box>
+  );
+};
 
 export default NavBar;
