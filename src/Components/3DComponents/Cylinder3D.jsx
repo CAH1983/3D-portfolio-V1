@@ -15,7 +15,7 @@ const Cylinder3d = (props) => {
     <mesh
       {...props}
       ref={meshRef}
-      scale={clicked ? 1.5 : 1}
+      scale={clicked ? 1.2 : 0.6}
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}
