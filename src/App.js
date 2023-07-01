@@ -11,7 +11,7 @@ import ContactForm from "./Components/Form/ContactForm";
 
 function App() {
   return (
-    <Box pos="relative" bg="black">
+    <Box pos="relative" bg="black" color="lightgray">
       <NavBar />
       <Triangle1 bgColor="#22aed5" />
 
