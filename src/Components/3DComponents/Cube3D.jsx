@@ -3,7 +3,6 @@ import { useFrame } from "@react-three/fiber";
 
 const Cube3D = (props) => {
   const meshRef = useRef();
-  // @ts-ignore
   useFrame((state, delta) => (meshRef.current.rotation.x += 0.01));
 
   return (

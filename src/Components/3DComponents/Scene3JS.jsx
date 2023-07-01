@@ -12,8 +12,8 @@ const Scene3JS = () => {
         <ambientLight />
         {/* bonbon full */}
         <Cylinder3d position={[4, -2, 0]} />
-        <pointLight position={[10, 10, 10]} />
         <ambientLight color="pink" intensity={1.5} />
+        <pointLight position={[10, 10, 10]} />
         <Cylinder3d position={[-3.2, 3, 0]} wireframe={true} />
         <Cylinder3d position={[3.5, 1, 0]} wireframe={true} />
         <ambientLight color="#6200ff" />
