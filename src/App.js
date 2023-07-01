@@ -1,4 +1,4 @@
-import { Container, Box, position } from "@chakra-ui/react";
+import { Container, Box, Heading } from "@chakra-ui/react";
 
 // components
 import NavBar from "./Components/NavBar";
@@ -12,11 +12,13 @@ import ContactForm from "./Components/Form/ContactForm";
 function App() {
   return (
     <Box pos="relative" bg="black" color="lightgray">
-      <NavBar />
+      <Container>
+        <NavBar />
+      </Container>
       <Triangle1 bgColor="#22aed5" />
 
       {/* <Scene3DHero /> */}
-      <Box>
+      <Box pos="relative">
         <Scene3JS />
       </Box>
       <ContactForm />
