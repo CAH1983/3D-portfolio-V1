@@ -6,7 +6,7 @@ import Cube3D from "./Cube3D";
 
 const Scene3JS = () => {
   return (
-    <Box h="100vh">
+    <Box h="80vh">
       <Canvas>
         <pointLight position={[10, 10, 10]} />
         <ambientLight />
@@ -19,9 +19,9 @@ const Scene3JS = () => {
         <ambientLight color="#6200ff" />
         <pointLight position={[0, 20, 10]} intensity={1.5} />
         <Cylinder3d position={[-1.2, 0, 0]} wireframe={true} />
-        <Cylinder3d position={[-3.6, -1, 0]} wireframe={true} />
+        <Cylinder3d position={[-4.6, -1, 0]} wireframe={true} />
         {/* Barebone cube */}
-        <Cube3D position={[0, -2, 0]} wireframe={true} />
+        <Cube3D position={[0, 2.5, 0]} wireframe={true} />
       </Canvas>
     </Box>
   );
